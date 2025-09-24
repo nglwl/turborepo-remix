@@ -1,0 +1,78 @@
+{
+  "name": "@repo/ui",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "sideEffects": false,
+  "files": [
+    "dist/**",
+    "dist"
+  ],
+  "exports": {
+    "./counter-button": {
+      "import": {
+        "types": "./dist/es/counter-button.d.mts",
+        "default": "./dist/es/counter-button.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/counter-button.d.ts",
+        "default": "./dist/cjs/counter-button.js"
+      }
+    },
+    "./link": {
+      "import": {
+        "types": "./dist/es/link.d.mts",
+        "default": "./dist/es/link.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/link.d.ts",
+        "default": "./dist/cjs/link.js"
+      }
+    },
+    "./table": {
+      "import": {
+        "types": "./dist/es/table.d.mts",
+        "default": "./dist/es/table.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/table.d.ts",
+        "default": "./dist/cjs/table.js"
+      }
+    }
+  },
+  "scripts": {
+    "build": "bunchee",
+    "dev": "bunchee --watch",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint src/",
+    "test": "jest"
+  },
+  "jest": {
+    "preset": "@repo/jest-presets/browser"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@repo/eslint-config": "workspace:*",
+    "@repo/jest-presets": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "^22.15.3",
+    "autoprefixer": "^10.4.21",
+    "bunchee": "^6.4.0",
+    "eslint": "^9.31.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "postcss": "^8.5.6",
+    "tailwindcss": "3",
+    "typescript": "5.8.2"
+  },
+  "dependencies": {
+    "@swc/helpers": "^0.5.5"
+  },
+  "peerDependencies": {
+    "@types/react": ">=18",
+    "@types/react-dom": ">=18",
+    "react": ">=18",
+    "react-dom": ">=18"
+  }
+}

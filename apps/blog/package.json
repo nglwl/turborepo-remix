@@ -1,0 +1,51 @@
+{
+  "name": "blog",
+  "version": "0.0.0",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "build": "remix vite:build",
+    "dev": "remix vite:dev",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint app/ --max-warnings 0",
+    "test": "vitest run",
+    "test:ui": "vitest"
+  },
+  "dependencies": {
+    "@remix-run/node": "^2.15.2",
+    "@remix-run/react": "^2.15.2",
+    "@remix-run/server-runtime": "^2.15.2",
+    "@repo/ui": "workspace:*",
+    "@vercel/analytics": "^1.5.0",
+    "@vercel/remix": "2.16.6",
+    "flexlayout-react": "0.7.13",
+    "isbot": "^5.1.23",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^2.15.2",
+    "@repo/eslint-config": "workspace:*",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/jsdom": "^21.1.7",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@typescript-eslint/eslint-plugin": "^8.37.0",
+    "@typescript-eslint/parser": "^8.37.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.31.0",
+    "jsdom": "^24.1.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
+    "typescript": "5.8.2",
+    "vite": "^5.4.14",
+    "vite-tsconfig-paths": "4.2.1",
+    "vitest": "^2.1.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
