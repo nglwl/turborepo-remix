@@ -25,6 +25,7 @@ pnpm e2e
 ```
 
 Truy cập:
+
 - Blog (Remix + Vite): http://localhost:5173
 - API (Express): http://localhost:5001/status
 
@@ -46,7 +47,7 @@ Truy cập:
   - Thêm tab mới bằng nút “+”
   - Đổi tên tab bằng double-click (inline editing)
 - Bảng hiện đại dùng Tailwind trong `@repo/ui/table`:
-  - `DataTable` tối giản: chỉ cần `columns` và `data`
+  - `DataTable` tối giản: chỉ cần `columns` và `data`remote: {"auth_status":"access_denied_to_user","body":"Permission to nglwl/turborepo-remix.git denied to canxicacbonat."}
   - Styling mặc định: header `bg-gray-50`, hover row, padding, border, responsive container
   - Hiển thị trạng thái rỗng (`emptyText`)
 - Ví dụ tích hợp `DataTable` trong Blog (`TablePanel`) với dữ liệu ngẫu nhiên sinh khi mount (mỗi tab mới là dataset khác)
