@@ -13,6 +13,7 @@
     "e2e:ui": "playwright test --ui"
   },
   "devDependencies": {
+    "@netlify/remix-adapter": "^2.6.1",
     "prettier": "^3.6.0",
     "turbo": "^2.5.8",
     "@playwright/test": "^1.48.2"
