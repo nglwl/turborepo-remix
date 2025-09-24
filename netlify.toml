@@ -1,7 +1,6 @@
 [build]
   command = "pnpm install --no-frozen-lockfile && pnpm --filter @repo/ui build && pnpm --filter blog build"
   publish = "apps/blog/build/client"
-  functions = "apps/blog/build/server/netlify/functions"
 
 [build.environment]
   NODE_VERSION = "18"
@@ -14,13 +13,8 @@
   skip_processing = true
 
 [[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/server"
-  status = 200
-
-[[redirects]]
   from = "/*"
-  to = "/.netlify/functions/server"
+  to = "/index.html"
   status = 200
 
 
