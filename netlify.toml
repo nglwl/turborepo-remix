@@ -9,12 +9,7 @@
 [functions]
   node_bundler = "esbuild"
 
-[build.processing]
-  skip_processing = true
-
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/.netlify/functions/server"
   status = 200
-
-
