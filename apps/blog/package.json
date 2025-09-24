@@ -25,6 +25,7 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@netlify/remix-adapter": "^2.6.1",
     "@remix-run/dev": "^2.15.2",
     "@repo/eslint-config": "workspace:*",
     "@testing-library/jest-dom": "^6.6.3",
