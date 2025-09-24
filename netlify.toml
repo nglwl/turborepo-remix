@@ -10,9 +10,6 @@
 [functions]
   node_bundler = "esbuild"
 
-[[plugins]]
-  package = "@netlify/remix-adapter"
-
 [build.processing]
   skip_processing = true
 
